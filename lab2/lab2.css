@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 2.5rem;
+    color: #080808;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+
+section.Bio, section.Hobbies, section.schedule {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    align-items: center;
+    padding: 30px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px; 
+}
+
+.Bio img, .Hobbies img, .schedule img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.Bio img:hover, .Hobbies img:hover, .schedule img:hover {
+    transform: scale(1.05); 
+}
+
+.Bio .text, .Hobbies .text, .schedule .text {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+footer a {
+    color: #4A90E2;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #4A90E2;
+    border-radius: 5px;
+}
+
+footer a:hover {
+    background-color: #4A90E2; 
+    color: white; 
+}
+
+@media (max-width: 768px) {
+    section.Bio, section.Hobbies, section.schedule {
+        grid-template-columns: 1fr; 
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
