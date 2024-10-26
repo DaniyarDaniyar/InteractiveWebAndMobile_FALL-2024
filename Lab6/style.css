@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: Arial, sans-serif; /* Change font for better readability */
+}
+
+h1, h2 {
+    margin: 0; /* Remove default margin */
+}
+
+#cover {
+    border: 2px solid #007bff; /* Blue border around the cover image */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Shadow for depth */
+}
+
+.btn {
+    width: 100px; /* Set a fixed width for buttons */
+    font-size: 16px; /* Increase font size */
+}
+
+.form-range {
+    appearance: none; /* Remove default styling */
+    height: 5px; /* Set height of the progress bar */
+    border-radius: 5px; /* Rounded corners */
+    background: #007bff; /* Progress bar color */
+    outline: none; /* Remove outline on focus */
+}
+
+.form-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default thumb style */
+    appearance: none;
+    width: 20px; /* Thumb width */
+    height: 20px; /* Thumb height */
+    background: white; /* Thumb color */
+    border: 2px solid #007bff; /* Thumb border */
+    border-radius: 50%; /* Round thumb */
+}
+
+.form-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+}
+
+.list-group-item {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef; /* Light gray background on hover */
+}
